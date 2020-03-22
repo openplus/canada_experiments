@@ -18,6 +18,7 @@ regions:
   help: 'Help'
   content: 'Content'
   content_footer: 'Content Footer'
+  content_suffix: 'Content Suffix'
   sidebar_first: 'Sidebar First'
   sidebar_second: 'Sidebar Second'
   footer: 'Footer'
@@ -27,3 +28,48 @@ regions:
 libraries-extend:
   bootstrap/framework:
     - 'canada_bootstrap/framework'
+
+# libraries:
+#     # Define your own libraries here, example react, or cdn library
+#   - canada_experiments/diff-jquery
+#   - canada_experiments/contextual-css-override
+
+# libraries-extend:
+#   bootstrap/framework:
+#     - 'wxt_bootstrap/drupal.wxt_bootstrap'
+
+# libraries-override:
+#    wxt_library/wet-boew:
+#      js:
+#        /libraries/wet-boew/js/wet-boew.min.js: js/wet-theme-upd-fieldflow.js
+
+# libraries-override:
+#  wxt_library/theme-gcweb:
+#    js:
+#      /libraries/theme-gcweb/js/theme.min.js: js/wet-theme-upd-fieldflow.js
+
+# Override a certain file
+# wxt_library/theme-gcweb:
+#   css:
+#     theme:
+#       /libraries/theme-gcweb/css/theme.min.css: css/testfullwxt.css
+#       /libraries/theme-gcweb/css/ie8-theme.min.css: css/testfullwxt-ie8.css
+
+# libraries-override:
+# Disable the whole theme
+# wxt_library/theme-gcweb: false
+
+# Disablle the whole theme
+# wxt_library/theme-gcweb: false
+
+# Disables a library
+# contextual/drupal.contextual-links: false
+
+# Replace only a certain file for a library
+# contextual/drupal.contextual-links: canada_experiments/contextual-css-override
+
+# Replace an entire library. The new library is defined in canada_experiments.libraries.yml
+# core/drupal.collapse: mytheme/collapse
+
+# Replace an asset with another. -> check canada_experiments.libraries.yml
+# core/jquery: canada_experiments/diff-jquery
