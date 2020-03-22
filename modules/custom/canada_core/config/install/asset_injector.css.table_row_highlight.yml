@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - term_condition
+    - wxt_library
+id: table_row_highlight
+label: 'Table row highlight'
+code: "tr:hover {\r\n    background-color: #eee;\r\n}\r\n td:hover {\r\n    cursor: pointer;\r\n}\r\n"
+media: all
+preprocess: true
+conditions:
+  term:
+    id: term
+    negate: false
+    tid: '28'
+    context_mapping:
+      node: '@node.node_route_context:node'
+  panels_title:
+    id: panels_title
+    enabled: 0
+    negate: false
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: '*/rates.html'
+    negate: false
+conditions_require_all: true

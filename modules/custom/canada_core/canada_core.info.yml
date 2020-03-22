@@ -1,11 +1,32 @@
 name: 'CANADA Core'
-description: 'Registers additional CANADA functionality.'
+description: 'Registers additional Canada.ca functionality.'
 type: module
 core: 8.x
-package: CANADA
+package: canada
 
 # Required modules
-dependencies: { }
+dependencies:
+  - drupal:asset_injector
+  - drupal:backup_migrate
+  - drupal:ckeditor_templates
+  - drupal:ckeditor_templates_ui
+  - drupal:codemirror_editor
+  - drupal:content_lock
+  - drupal:context
+  - drupal:context_breadcrumb
+  - drupal:convert_bundles
+  - drupal:devel
+  - drupal:devel_php
+  - drupal:entity_clone
+  - drupal:library_manager
+  - drupal:link_css
+  - drupal:moderation_note
+  - drupal:schema_metatag
+  - drupal:shield
+  - drupal:term_condition
+  - drupal:vardumper
+  - drupal:views_bulk_edit
+  - drupal:views_bulk_operations
 
 # Required libraries
 libraries: { }

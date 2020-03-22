@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: service_initiation_template_circles
+label: 'Service initiation template - circles'
+image: ''
+description: 'Circle design for SIT'
+html:
+  value: "<div class=\"container\">\r\n<p class=\"gc-byline\">Use 'Single column - H1 hidden' layout.<br />\r\nYou must assign the tag 'sit-circles' to get the styling for the navigation menu on the page.&nbsp;</p>\r\n\r\n<h1><span class=\"stacked\" role=\"text\"> <span>Put your title here</span>: <span>H1 super-title</span></span></h1>\r\n<!-- New nav style -->\r\n\r\n<div class=\"row\">\r\n<div class=\"col-md-4 col-md-push-8\" id=\"steps-menu\"><span class=\"hidden-md hidden-lg\" id=\"can-apply\" tabindex=\"-1\"></span>\r\n\r\n<nav class=\"section-menu mobile\">\r\n<h2 class=\"menu-title\"><span class=\"wb-inv-md wb-inv-lg\"><!--Should there be text here?--></span> <span class=\"wb-inv-xs wb-inv-sm\">Sections</span></h2>\r\n\r\n<ul class=\"vertical-steps\">\r\n\t<li class=\"active\"><a>Link 1 <span class=\"wb-inv\"> - xxxx</span></a></li>\r\n\t<li><a href=\"#\">Link 2</a><a href=\"#\"><span class=\"wb-inv\"> - xxxx</span></a></li>\r\n\t<li><a href=\"#\">Link 3<span class=\"wb-inv\"> - xxxx</span></a></li>\r\n\t<li><a href=\"#\">Link 4<span class=\"wb-inv\"> - xxxx</span></a></li>\r\n\t<li><a href=\"#\">Link 5<span class=\"wb-inv\"> - xxxx</span></a></li>\r\n</ul>\r\n</nav>\r\n</div>\r\n\r\n<div class=\"col-md-8 col-md-pull-4\">\r\n<p>Content goes in here.</p>\r\n</div>\r\n</div>\r\n\r\n<div class=\"clearfix\">&nbsp;</div>\r\n\r\n<div class=\"row\">\r\n<h2 class=\"wb-inv\">Contributors</h2>\r\n\r\n<div class=\"col-md-1\" style=\"width: 7% !important;\">\r\n<h3 class=\"from\">From:</h3>\r\n</div>\r\n\r\n<div class=\"col-md-11 contributors\">\r\n<ul>\r\n\t<li><a href=\"https://www.canada.ca/en/public-services-procurement.html\">Public Services and Procurement Canada</a></li>\r\n</ul>\r\n</div>\r\n</div>\r\n</div>\r\n"
+  format: rich_text
+weight: 0

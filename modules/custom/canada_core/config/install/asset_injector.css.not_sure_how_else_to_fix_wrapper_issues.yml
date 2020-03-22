@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - term_condition
+    - wxt_library
+id: not_sure_how_else_to_fix_wrapper_issues
+label: 'ALL PAGES - fixes and components'
+code: "/* stuff that should really be fixed in the templates */\r\n\r\n.datemod {\r\n  font-size: .785em;\r\n}\r\n\r\n.breadcrumb {\r\n  padding-top: 1.1em;\r\n}\r\n\r\n.pagedetails {\r\n  padding-top: 0em !important;\r\n}\r\n\r\n.page-node-type-landing-page .dialog-off-canvas-main-canvas .node--type-landing_page .field--name-body {\r\n  padding-bottom: 2em !important;\r\n}\r\n\r\n.most-requested li {\r\n\tfont-family: 'Lato', sans-serif;\r\n\tfont-size: 17px;\r\n\tfont-weight: 600;\r\n\tline-height: 26px;\r\n\tmargin-top: 0\r\n}\r\n\r\n.most-requested h2 {\r\n\tfont-size: 1.2em;\r\n}\r\n\r\n.region-footer li {\r\n  line-height: 1.4375 !important;\r\n}\r\n/* supports the 3 column layout for MR instead of 4 columns */\r\n.list-responsive-3 > li {\r\n    float: left;\r\n    padding-right: 5px;\r\n    width: 50%\r\n}\r\n\r\n.list-responsive-3 > li:nth-child(2n+2) {\r\n    clear: right\r\n}\r\n\r\n.list-responsive-3:before,\r\n.list-responsive-3:after {\r\n    content: \" \";\r\n    display: table\r\n}\r\n\r\n.list-responsive-3:after {\r\n    clear: both\r\n}\r\n\r\n.alert-success, .alert-info, .alert-warning, .alert-danger {\r\n\tbackground: #fff !important;\r\n}\r\n.alert {\r\n\tborder-width: 1px 1px 1px 4px !important;\r\n\tmargin-left: 12px;\r\n\tpadding-left: 20px;\r\n\tborder-width: 0px 0px 0px 6px!important\r\n}\r\n.alert-success > :first-child::before, .alert-info > :first-child::before, .alert-warning > :first-child::before, .alert-danger > :first-child::before {\r\n\tfont-size: 26px;\r\n\tmargin-left: -1.48em;\r\n\tbackground: #fff;\r\n\tpadding: 2px\r\n}\r\n.alert > :first-child {\r\n\tmargin-left: 0em;\r\n}\r\n.alert >:first-child::before {\r\n\tmargin-right: 0.4em\r\n}\r\n\r\nh1 span.stacked {\r\n\t\t                display: flex;\r\n\t\t                flex-direction: column-reverse;\r\n\t\t                margin-left: -9999px;\r\n\t\t}\r\n\t\th1 span.stacked span:nth-child(1), h1 span.stacked span:nth-child(2) {\r\n\t\t                margin-left: 9999px;\r\n\t\t}\r\n\t\th1 span.stacked span:nth-child(2) {\r\n\t\t                font-size: 0.8em;\r\n\t\t                color: #666;\r\n\t\t\t\t\t\t\t\t\t\tfont-weight: 500;\r\n\t\t\t\t\t\t\t\t\t\tmargin-bottom: 0.175em;\r\n\t\t}\r\n\t\th1 span.stacked span:nth-child(1) {\r\n\t\t                margin-top: -1.1em;\r\n\t\t}\r\n\t\t\r\n\t\t\r\n.followus-2 h2 {\r\n\tfont-size: 1.1em;\r\n}\r\n\t\t.facebook-2 {\r\n    background: url(\"https://test.canada.ca/canada-child-benefit-2/validation/GCWeb/images/facebook.png\") no-repeat !important;\r\n    height: 27px;\r\n    width: 27px;\r\n  }\r\n  .twitter-2 {\r\n    background: url(\"https://test.canada.ca/canada-child-benefit-2/validation/GCWeb/images/twitter.png\") no-repeat !important;\r\n    height: 27px;\r\n    width: 27px;\r\n  }\r\n  .followus-2 {\r\n    line-height: 0em !important;\r\n  }\r\n  .followus-2 a {\r\n    text-decoration: none !important;\r\n  }\r\n  .followus-2 ul {\r\n    list-style-type: none !important;\r\n    margin-block-start: 1.5em;\r\n    margin-block-end: 0em;\r\n    margin-inline-start: 0px;\r\n    margin-inline-end: 0px;\r\n    padding-inline-start: 30px;\r\n    font-size: 85%;\r\n  }\r\n  .media-spc {\r\n    padding-left: 15px;\r\n  }\r\n  .media-spc-2 {\r\n    padding-left: 55px !important;\r\n  }\r\n  \r\n  .promo-social h3 {\r\n    margin-top: 5px !important;\r\n    text-decoration: underline !important;\r\n  }\r\n  .cont-ad {\r\n    margin-right: .4em;\r\n  }\r\n  .cust-thumbnail {\r\n    border-color: #335075 !important;\r\n    border-width: 1px !important;\r\n    padding: 0px !important;\r\n  }\r\n  \r\n\r\n.most-requested h2 {\r\n  font-size: 1.1em;\r\n  }\r\n  \r\n  .contributors {\r\n\tfont-size: 16px !important;\r\n\tfont-weight: 600;\r\n}\r\n\r\n.from {\r\n\tfont-size: 17px !important;\r\n\tmargin-top: 7px;\r\n}\r\n\r\n.contributors ul {\r\n\tmargin-block-start: 0em;\r\n\tmargin-block-end: 0em;\r\n\tmargin-inline-start: -28px;\r\n\tmargin-inline-end: 0px;\r\n\tpadding-inline-start: 0px;\r\n\r\n}\r\n\r\n\r\n\r\n@media screen and (min-width: 1200px) {\r\n.list-responsive-3 > li {\r\n    width: 33%;\r\n\t}\r\n}\r\n\r\n@media screen and (min-width: 992px) {\r\n.contributors li {\r\n    display: inline-block;\r\n    float: left;\r\n    margin-right: .7em;\r\n}\r\n}\r\n\r\n@media screen and (min-width: 992px) {\r\n.contributors li:first-child:before {\r\n    content: none;\r\n}\r\n.contributors li:before {\r\n    content: \"\\2022\";\r\n    margin-right: .7em;\r\n}\r\n}\r\n\r\n@media screen and (max-width: 767px) {\r\n\r\n.btn-call-to-action {\r\n\tfont-size: 19px !important;\r\n\t}\r\n\r\n.most-requested li {\r\n\tfont-size: 19px;\r\n\t}\r\n\r\n.list-responsive-3 > li {\r\n        clear: right;\r\n        width: 100%\r\n  }\r\n\r\n.mobile-left {\r\n\tfloat: left !important;\r\n\t}\r\n\r\n.contributors ul {\r\n\tmargin-inline-start: 0px !important;\r\n}\r\n\r\n}"
+media: all
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    pages: '*'
+    negate: false
+  term:
+    id: term
+    negate: false
+    tid: null
+    context_mapping:
+      node: '@node.node_route_context:node'
+  panels_title:
+    id: panels_title
+    enabled: 0
+    negate: false
+    context_mapping: {  }
+conditions_require_all: true

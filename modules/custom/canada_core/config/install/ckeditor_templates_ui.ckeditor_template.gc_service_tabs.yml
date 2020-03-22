@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: gc_service_tabs
+label: 'Service Tabs'
+image: ''
+description: 'Service initiation template tabs'
+html:
+  value: "<div class=\"mrgn-tp-md mrgn-bttm-sm brdr-bttm\">\r\n<div class=\"row  mrgn-bttm-sm\">\r\n<ul class=\"toc lst-spcd col-md-12\">\r\n\t<li class=\"col-md-4\"><a class=\"list-group-item cust-active active\" href=\"./ei-maternity-parental.html\">What these benefits offer</a></li>\r\n\t<li class=\"col-md-4\"><a class=\"list-group-item\" href=\"./eligibility.html\">Eligibility</a></li>\r\n\t<li class=\"col-md-4\"><a class=\"list-group-item\" href=\"./benefit-amount.html\">How much you could receive</a></li>\r\n\t<li class=\"col-md-4\"><a class=\"list-group-item\" href=\"./apply.html\">Apply</a></li>\r\n\t<li class=\"col-md-4\"><a class=\"list-group-item\" href=\"./after-applying.html\">After you've applied</a></li>\r\n\t<li class=\"col-md-4\"><a class=\"list-group-item\" href=\"./special-circumstances.html\">Special circumstances</a></li>\r\n</ul>\r\n</div>\r\n</div>\r\n"
+  format: rich_text
+weight: -5

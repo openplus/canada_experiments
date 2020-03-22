@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: 3_col_with_edge_color
+label: '3 col with Edge-Color'
+image: ''
+description: 'Sample fluid conntianer with 3 columns'
+html:
+  value: "<section class=\"home-most-requested well well-sm brdr-0\">\r\n<div class=\"container\">\r\n<h2 class=\"mrgn-tp-md\">Topic</h2>\r\n\r\n<ul class=\"wb-eqht list-unstyled mrgn-tp-md mrgn-bttm-sm lst-spcd-2 list-responsive wb-init wb-eqht-inited\" id=\"wb-auto-2\">\r\n\t<li style=\"vertical-align: top; min-height: 27px;\"><a href=\"https://www.canada.ca/en/government/sign-in-online-account.html\">Login to an account</a></li>\r\n\t<li style=\"vertical-align: top; min-height: 27px;\"><a href=\"https://www.canada.ca/en/services/benefits/ei.html\">Employment Insurance and leave</a></li>\r\n\t<li style=\"vertical-align: top; min-height: 27px;\"><a href=\"https://www.canada.ca/en/services/benefits/publicpensions.html\">Public pensions (CPP and OAS)</a></li>\r\n\t<li style=\"vertical-align: top; min-height: 27px;\"><a href=\"https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-passports.html\">Get a passport</a></li>\r\n\t<li style=\"vertical-align: top; min-height: 27px;\"><a href=\"https://weather.gc.ca/canada_e.html\">Weather</a></li>\r\n\t<li style=\"vertical-align: top; min-height: 27px;\"><a href=\"https://www.canada.ca/en/government/grants-funding.html\">Grants and funding</a></li>\r\n\t<li style=\"vertical-align: top; min-height: 27px;\"><a href=\"https://www.canada.ca/en/government/change-address.html\">Change your address</a></li>\r\n\t<li style=\"vertical-align: top; min-height: 27px;\"><a href=\"http://www.healthycanadians.gc.ca/recall-alert-rappel-avis/index-eng.php\">Product recalls and alerts</a></li>\r\n</ul>\r\n</div>\r\n</section>\r\n"
+  format: rich_text
+weight: -3

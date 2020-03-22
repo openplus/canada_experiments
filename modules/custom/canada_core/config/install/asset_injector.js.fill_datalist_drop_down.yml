@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - term_condition
+    - wxt_library
+id: fill_datalist_drop_down
+label: 'Fill Datalist Drop Down'
+code: "//Abstract function to fill '<datalist>' with '<option>' data\r\n//Note: Delimiters should be an array of search tags [\"delimiter1\", \"delimiter2\"]\r\n//Values & Labels must be in dataset\r\nfunction fillDataList(id, dataset, delimiters,value,label){\r\n    var datalist = document.getElementById(id);\r\n    console.log(dataset);\r\n    dataset = JSON.parse(dataset); \r\n    for (var i = 0; i < dataset.length; i++) {\r\n        var delims = \"\";\r\n        for(var j=0; j < delimiters.length; j++){\r\n            var thisDelimiter = delimiters[j]; var thisDelimiterData = JSON.stringify(dataset[i][thisDelimiter]);\r\n            delims = delims + 'data-'+JSON.stringify(thisDelimiter).slice(1,-1)+'='+thisDelimiterData+' ';\r\n        }\r\n        datalist.innerHTML = datalist.innerHTML + '<option value=\"'+dataset[i][value]+'\" label=\"'+(dataset[i][label] || '' )+'\" '+delims+'></option>';\r\n    }\r\n}"
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: true
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    pages: '/landing/*'
+    negate: false
+  term:
+    id: term
+    negate: false
+    tid: null
+    context_mapping:
+      node: '@ctools.entity_route_context:node'
+  panels_title:
+    id: panels_title
+    enabled: 0
+    negate: false
+    context_mapping: {  }
+conditions_require_all: true

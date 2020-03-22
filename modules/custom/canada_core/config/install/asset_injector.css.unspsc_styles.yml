@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - term_condition
+    - wxt_library
+id: unspsc_styles
+label: 'unspsc styles'
+code: "summary {\r\n\tborder: none !important;\r\n\tmargin: 0 0 0 0 !important;\r\n\tpadding: 0 0 0 0 !important;\t\r\n\r\n}\r\n\r\nsummary span {\r\n  font-size: 18px !important;\r\n  text-decoration: underline !important;\r\n}\r\n\r\ndetails {\r\n\tborder: none !important;\r\n\tmargin: 0 0 0 0 !important;\r\n\tpadding: 0 0 0 0 !important;\r\n\r\n}\r\n\r\n/* search codes css */\r\n\r\n.dropdown-search select {\r\n  position:relative;\r\n  height: 2.2em;\r\n  margin-right: -.5em;\r\n  margin-left: 1.2em;\r\n  z-index: 1;\r\n  border-radius: 0;\r\n}\r\n\r\n"
+media: all
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    pages: '*category-codes*'
+    negate: false
+  term:
+    id: term
+    negate: false
+    tid: null
+    context_mapping:
+      node: '@node.node_route_context:node'
+  panels_title:
+    id: panels_title
+    enabled: 0
+    negate: false
+    context_mapping: {  }
+conditions_require_all: true

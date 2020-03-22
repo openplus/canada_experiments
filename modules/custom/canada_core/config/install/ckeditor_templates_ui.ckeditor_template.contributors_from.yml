@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: contributors_from
+label: Contributors/From
+image: ''
+description: 'The byline for contributors/from departments'
+html:
+  value: "<h2 class=\"wb-inv\">Contributors <!-- start theme contributors --></h2>\r\n\r\n<div class=\"col-md-1\">\r\n<h3 class=\"from\">From:</h3>\r\n</div>\r\n\r\n<div class=\"col-md-11 contributors\">\r\n<ul>\r\n\t<li><a href=\"#\">[Department/organization]</a></li>\r\n\t<li><a href=\"#\">[Department/organization]</a></li>\r\n\t<li><a href=\"#\">[Department/organization]</a></li>\r\n\t<li><a href=\"#\">[Department/organization]</a></li>\r\n</ul>\r\n</div>\r\n<!-- end theme contributors -->"
+  format: rich_text
+weight: 1

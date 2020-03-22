@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: h1_super_title
+label: 'H1 super-title'
+image: ''
+description: ''
+html:
+  value: "<h1><span class=\"stacked\" role=\"text\"> <span>Put your title here</span>: <span>H1 super-title</span></span> &nbsp;</h1>\r\n"
+  format: rich_text
+weight: -7

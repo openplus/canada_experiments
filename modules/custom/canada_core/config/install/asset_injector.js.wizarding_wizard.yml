@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - term_condition
+    - wxt_library
+id: wizarding_wizard
+label: 'wizarding wizard'
+code: " var issueType = \"\";\r\n    jQuery(document).ready(\r\n      function(){\r\n        jQuery(\"input[name=pay-issue]\").on( \"change\", function() {\r\n          issueType = this.id; //issueType becomes the ID of their choice\r\n          if (issueType == 'update')\r\n          {\r\n            jQuery(\"#deductions-help\").hide(\"slow\");\r\n            jQuery(\"#not-full-pay-help\").hide(\"slow\");\r\n            jQuery(\"#no-pay-help\").hide(\"slow\");\r\n            jQuery(\"#overpayment-help\").hide(\"slow\");\r\n            jQuery(\"#other-help\").hide(\"slow\");\r\n            jQuery(\"#update-help\").show(\"slow\");\r\n          }\r\n          else if (issueType=='overpayment')\r\n          {\r\n            jQuery(\"#deductions-help\").hide(\"slow\");\r\n            jQuery(\"#not-full-pay-help\").hide(\"slow\");\r\n            jQuery(\"#no-pay-help\").hide(\"slow\");\r\n            jQuery(\"#update-help\").hide(\"slow\");\r\n            jQuery(\"#other-help\").hide(\"slow\");\r\n            jQuery(\"#overpayment-help\").show(\"slow\");\r\n          }\r\n          else if (issueType=='no-pay')\r\n          {\r\n            jQuery(\"#deductions-help\").hide(\"slow\");\r\n            jQuery(\"#not-full-pay-help\").hide(\"slow\");\r\n            jQuery(\"#update-help\").hide(\"slow\");\r\n            jQuery(\"#overpayment-help\").hide(\"slow\");\r\n            jQuery(\"#other-help\").hide(\"slow\");\r\n            jQuery(\"#no-pay-help\").show(\"slow\");\r\n          }\r\n          else if (issueType=='not-full-pay')\r\n          {\r\n            jQuery(\"#deductions-help\").hide(\"slow\");\r\n            jQuery(\"#update-help\").hide(\"slow\");\r\n            jQuery(\"#overpayment-help\").hide(\"slow\");\r\n            jQuery(\"#no-pay-help\").hide(\"slow\");\r\n            jQuery(\"#other-help\").hide(\"slow\");\r\n            jQuery(\"#not-full-pay-help\").show(\"slow\");\r\n          }\r\n          else if (issueType=='deductions')\r\n          {\r\n            jQuery(\"#update-help\").hide(\"slow\");\r\n            jQuery(\"#overpayment-help\").hide(\"slow\");\r\n            jQuery(\"#no-pay-help\").hide(\"slow\");\r\n            jQuery(\"#not-full-pay-help\").hide(\"slow\");\r\n            jQuery(\"#other-help\").hide(\"slow\");\r\n            jQuery(\"#deductions-help\").show(\"slow\");\r\n          }\r\n          else if (issueType=='other')\r\n          {\r\n            jQuery(\"#update-help\").hide(\"slow\");\r\n            jQuery(\"#overpayment-help\").hide(\"slow\");\r\n            jQuery(\"#no-pay-help\").hide(\"slow\");\r\n            jQuery(\"#not-full-pay-help\").hide(\"slow\");\r\n            jQuery(\"#deductions-help\").hide(\"slow\");\r\n            jQuery(\"#other-help\").show(\"slow\");\r\n          }\r\n        });\r\n      });\r\n\r\n    var hireDate= \"\";\r\n    jQuery(document).ready(\r\n      function(){\r\n        jQuery(\"input[name=new-hire]\").on( \"change\", function() {\r\n          hireDate = this.id; //issueType becomes the ID of their choice\r\n          if (hireDate == 'yes-recent')\r\n          {\r\n            jQuery(\"#2not-recent\").hide(\"slow\");\r\n            jQuery(\"#2recent-hire\").show(\"slow\");\r\n          }\r\n          else if (hireDate=='no-recent')\r\n          {\r\n            jQuery(\"#2recent-hire\").hide(\"slow\");\r\n            jQuery(\"#2not-recent\").show(\"slow\");\r\n          }\r\n        });\r\n      });(jQuery);"
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: true
+conditions:
+  term:
+    id: term
+    negate: false
+    tid: '53'
+    context_mapping:
+      node: '@ctools.entity_route_context:node'
+  panels_title:
+    id: panels_title
+    enabled: 0
+    negate: false
+    context_mapping: {  }
+conditions_require_all: true

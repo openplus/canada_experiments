@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - term_condition
+    - wxt_library
+id: hide_show
+label: hide-show
+code: "(function($) {\r\n\r\n   $('.showMore').click(function(){\r\n       $(this).siblings('.mores').toggleClass('hidden');\r\n   });\r\n   \r\n    $('.showResults').click(function(){\r\n       $( '.results').show();\r\n   });\r\n   \r\n   \r\n   \r\n     $('.quebec-f').click(function(){\r\n       $( '.quebec').show( );\r\n       $( '.ontario').hide( );\r\n       $( '.ncr').hide( );\r\n        $( '.4-result').hide( );\r\n       $( '.1-result').toggleClass('wb-inv');\r\n\r\n \r\n     });\r\n    \r\n     $('.ontario-f').click(function(){\r\n       $( '.quebec').hide( );\r\n       $( '.ontario').show( );\r\n       $( '.ncr').hide( );\r\n       $( '.4-result').hide( );\r\n       $( '.1-result').toggleClass('wb-inv');\r\n     });\r\n   \r\n     $('.ncr-f').click(function(){\r\n       $( '.quebec').hide( );\r\n       $( '.ontario').hide( );\r\n       $( '.ncr').show( );\r\n       $( '.4-result').hide( );\r\n       $( '.1-result').toggleClass('wb-inv');\r\n      \r\n   });\r\n   \r\n   $('.proofreading-f').click(function(){\r\n       $( '.public-opinion').hide( );\r\n       $( '.proofreading').show( );\r\n       $( '.4-result').hide( );\r\n       $( '.1-result').toggleClass('wb-inv');\r\n      \r\n   });\r\n   \r\n      $('.public-opinion-f').click(function(){\r\n      $( '.proofreading').hide( );\r\n       $( '.public-opinion').show( );\r\n       $( '.4-result').hide( );\r\n       $( '.1-result').toggleClass('wb-inv');\r\n      \r\n   });\r\n   \r\n    $('.training-f').click(function(){\r\n      $( '.dev').hide( );\r\n      $( '.software').hide( );\r\n      $( '.dev-2').hide( );\r\n      $( '.training').show( );\r\n    });\r\n      \r\n    $('.dev-2-f').click(function(){\r\n      $( '.dev').hide( );\r\n      $( '.software').hide( );\r\n      $( '.dev-2').show( );\r\n      $( '.training').hide( );\r\n      \r\n    });\r\n      \r\n    $('.dev-f').click(function(){\r\n      $( '.dev').show( );\r\n      $( '.software').hide( );\r\n      $( '.dev-2').show( );\r\n      $( '.training').hide( );\r\n      \r\n    });\r\n      \r\n    $('.software-f').click(function(){\r\n      $( '.dev').hide( );\r\n      $( '.software').show( );\r\n      $( '.dev-2').hide( );\r\n      $( '.training').hide( );\r\n    \r\n      \r\n   });\r\n   \r\n    $('#search-options').on('change', function() {\r\n    \r\n     \tif ( this.value == '1')\r\n      {\r\n        $(\".goods\").hide();\r\n        $(\".services\").show();\r\n        $(\".goods-results\").hide();\r\n        $(\".all-results\").hide();\r\n        $(\".services-results\").show();\r\n\r\n      }\r\n      \r\n      else if ( this.value == '2')\r\n      {\r\n        $(\".services\").hide();\r\n        $(\".goods\").show();\r\n        $(\".services-results\").hide();\r\n        $(\".all-results\").hide();\r\n        $(\".goods-results\").show();\r\n\r\n      }\r\n      else\r\n      {\r\n        $(\".services\").show();\r\n        $(\".goods\").show();\r\n        $(\".all-results\").show();\r\n      }\r\n    });\r\n \r\n  \r\n})(jQuery);"
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: true
+conditions:
+  term:
+    id: term
+    negate: false
+    tid: null
+    context_mapping:
+      node: '@node.node_route_context:node'
+  panels_title:
+    id: panels_title
+    enabled: 0
+    negate: false
+    context_mapping: {  }
+  request_path:
+    id: request_path
+    pages: '*/canadabuys/*'
+    negate: false
+conditions_require_all: true

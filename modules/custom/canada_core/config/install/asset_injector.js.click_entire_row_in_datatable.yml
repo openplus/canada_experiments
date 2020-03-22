@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - term_condition
+    - wxt_library
+id: click_entire_row_in_datatable
+label: 'Click entire row in datatable'
+code: "  $(document).ready(function() {\r\n\r\n      $('tr').click(function() {\r\n          var href = $(this).find(\"a\").attr(\"href\");\r\n          if(href) {\r\n              window.location = href;\r\n          }\r\n      });\r\n\r\n  });\r\n"
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: true
+conditions:
+  term:
+    id: term
+    negate: false
+    tid: '28'
+    context_mapping:
+      node: '@ctools.entity_route_context:node'
+  panels_title:
+    id: panels_title
+    enabled: 0
+    negate: false
+    context_mapping: {  }
+conditions_require_all: true

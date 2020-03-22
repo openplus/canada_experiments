@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: gc_accordion
+label: 'Details summary - accordion'
+image: ''
+description: Expand/collapse
+html:
+  value: "<div class=\"mwsaccordion-html section\">\r\n<details><summary>Accordion Sample Title </summary>\r\n<div class=\"mwsbodytext text parbase section\">\r\n<p>Placeholder text:</p>\r\n\r\n<ul>\r\n\t<li>list item 1</li>\r\n\t<li>list item 2</li>\r\n\t<li>list item 3</li>\r\n</ul>\r\n\r\n<p>This includes more text for you in a fresh paragrah.</p>\r\n\r\n<p><strong>Note:</strong> Preference text placeholders.</p>\r\n</div>\r\n</details>\r\n</div>\r\n"
+  format: rich_text
+weight: -9

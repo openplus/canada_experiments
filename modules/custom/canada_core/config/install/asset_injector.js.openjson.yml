@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - term_condition
+    - wxt_library
+id: openjson
+label: 'Read JSON as JS Object'
+code: "//Opens JSON file & returns as JS Object (With error handling)\r\nfunction openJSON(filelocation){\r\n    if( filelocation.substring(0, 6) != \"http://\" || filelocation.substring(0, 7) != \"https://\" ){\r\n        filelocation = \"http://localhost:8000\"+filelocation;\r\n    }\r\n    try{ \r\n        var request = new XMLHttpRequest();\r\n        request.open(\"GET\", filelocation, false); request.send(null);\r\n        var response = JSON.parse(request.responseText);\r\n        console.log(\"Successfully converted JSON file '\"+filelocation.toString()+\"' to JS Object.\"); console.log(response); return response;\r\n    }\r\n    catch(error){\r\n        console.log(\"Error fetching JSON... It is likely not hosted locally.\"); console.log(error); return null;\r\n    }\r\n}\r\n\r\n"
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: true
+preprocess: true
+conditions:
+  term:
+    id: term
+    negate: false
+    tid: null
+    context_mapping:
+      node: '@ctools.entity_route_context:node'
+  panels_title:
+    id: panels_title
+    enabled: 0
+    negate: false
+    context_mapping: {  }
+conditions_require_all: true

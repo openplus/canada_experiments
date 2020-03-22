@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: sample_hero_banner
+label: 'Sample Hero Banner'
+image: ''
+description: ''
+html:
+  value: "<div class=\"home\">\r\n  <div class=\"home-banner\">\r\n    <div class=\"container\">\r\n      <div class=\"innerbox\">\r\n        <h1 id=\"wb-cont\" property=\"name\">alpha.Canada.ca\r\n        </h1>\r\n        <p>Experimenting in the open on Canada.ca\r\n        </p>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+  format: rich_text
+weight: -1

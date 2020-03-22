@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: most_requested_stripe_v02
+label: 'Most requested stripe v02'
+image: ''
+description: ''
+html:
+  value: "<div class=\"container\"><!-- container must wrap around top content in order to fit the page properly, only close it when you hit the Most Requested 'section' -->\r\n<h1 id=\"wb-cont\">Page name</h1>\r\n\r\n<p>You will need to change the layout format under Full content to 'Single column - H1 hidden'.</p>\r\n\r\n<p>There are more notes in source view</p>\r\n</div>\r\n<!-- end container -->\r\n\r\n<section class=\"most-requested well well-sm brdr-0 mrgn-tp-md\"><!-- start most requested -->\r\n<div class=\"container\">\r\n<div class=\"float-left row col-md-2\">\r\n<h2 class=\"mrgn-tp-md\">Most requested</h2>\r\n</div>\r\n\r\n<div class=\"col-md-10\">\r\n<ul class=\"wb-eqht mrgn-tp-md mrgn-bttm-md colcount-md-2\">\r\n\t<li><a href=\"#\">[Top task hyperlink]</a></li>\r\n\t<li><a href=\"#\">[Top task hyperlink]</a></li>\r\n\t<li><a href=\"#\">[Top task hyperlink]</a></li>\r\n\t<li><a href=\"#\">[Top task hyperlink]</a></li>\r\n\t<li><a href=\"#\">[Top task hyperlink]</a></li>\r\n\t<li><a href=\"#\">[Top task hyperlink]</a></li>\r\n\t<li><a href=\"#\">[Top task hyperlink]</a></li>\r\n</ul>\r\n</div>\r\n</div>\r\n</section>\r\n<!-- end of most requested -->\r\n\r\n<div class=\"container\"><!-- new container for the rest of the page -->Put rest of page content inside this 'div class=\"container\"' so it won't run to the windows edge.</div>\r\n<!-- end 2nd container -->"
+  format: rich_text
+weight: -10

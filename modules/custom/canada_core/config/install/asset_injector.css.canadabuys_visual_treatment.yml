@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - term_condition
+    - wxt_library
+id: canadabuys_visual_treatment
+label: 'CanadaBuys visual treatment'
+code: ".well, .bkg-currentsellers, .home-banner {\r\n  background-color: #F2F2F2 !important;\r\n}\r\n\r\n.btn-login {\r\n  background-color: #26374a;\r\n  border: 1px solid #26374a;\r\n\tfont-weight: 600;\r\n\tfont-family: \"Lato\";\r\n  font-size: 17px;\r\n\tpadding-top: 7px;\r\n\tpadding-bottom: 7px;\r\n  padding-left: 16px;\r\n  padding-right: 16px;\r\n\tmargin-top: 3px;\r\n}\r\n\r\n.home-banner {\r\n  background-image: url(none) !important;\r\n}\r\n\r\n\r\n\r\n.form-control {\r\n  border-radius: 0;\r\n  height: 2.7em;\r\n}\r\n\r\n\r\n.btn-cb {\r\n  background-color: #e17127 !important;\r\n  border-radius: 0;\r\n  border: none;\r\n}\r\n\r\n.btn-cb:hover {\r\n  background-color: #874112 !important;\r\n}\r\n\r\n.btn-cb .glyphicon {\r\n  font-size: 1.2em;\r\n}\r\n\r\n.notice {\r\n  background-color: #2471e5;\r\n  text-align: center;\r\n  padding: .5em .5em .5em .5em;\r\n}\r\n\r\n.notice a {\r\n  color: white;\r\n}\r\n\r\n.notice a:visited {\r\n  color: white;\r\n}\r\n\r\n.cb-hero {\r\n  background-color: #1e4789;\r\n  padding: 2.5em 3em 3em 3em;\r\n}\r\n\r\n.tagline {\r\n  font-size: 1.1em;\r\n  font-weight: 700;\r\n  line-height: 1.5;\r\n  text-align: center;\r\n  padding: 1.7em 1.7em 1.7em 1.7em;\r\n\r\n}\r\n\r\n.indent {\r\n  margin-left: 2em;\r\n}\r\n\r\n.cb-steps {\r\n  margin-bottom: 2em;\r\n}\r\n\r\n.cb-steps p {\r\n  font-size: 18px;\r\n  line-height: 1.6;\r\n}\r\n\r\n.cb-steps h3 {\r\n  font-size: 22px;\r\n}\r\n\r\n\r\n.cb-home h2 {\r\n  font-size: 1.5em;\r\n}\r\n\r\n.bkg-gettingstarted {\r\n\r\n  background-image: url(http://gc-proto.github.io/eps-pspc/landing/get-started.jpg);\r\n  background-position: right center;\r\n  background-repeat: no-repeat;\r\n\r\n}\r\n\r\n.bkg-currentsellers {\r\n\r\n  background-image: url(http://gc-proto.github.io/eps-pspc/landing/current-sellers.jpg);\r\n  background-position: right center;\r\n  background-repeat: no-repeat;\r\n}\r\n\r\n  .cb-foot li {\r\n  display: inline-block;\r\n  float: left;\r\n  margin-right: 4.5em;\r\n  padding: 1em 0 1.3em 0;\r\n  }\r\n  .cb-foot li a {\r\n    color: #fff !important;\r\n}\r\n\r\n  .cb-foot li a:hover {\r\n    border-bottom: .2em solid  #e17127;\r\n\r\n}\r\n\r\n.bg-primary {\r\n    background-color: #f0f0f0 !important;\r\n    color: #333 !important;\r\n    font-weight: 100 !important;\r\n}\r\n\r\n.datemod {\r\n  margin-bottom: 10px !important;\r\n}\r\n\r\nh1 {\r\n  display: block;\r\n  padding-bottom: .55em;\r\n  position: relative;\r\n  border-bottom: none;\r\n  }\r\n  \r\n.home-banner h1:before {\r\n  width: 25% !important;\r\n}\r\n  \r\nh1:before{\r\n    content: \"\";\r\n    position: absolute;\r\n    width: 10%;\r\n    height: 1px;\r\n    bottom: 0;\r\n    left: 0%;\r\n    border-bottom: .3em solid #e17127;\r\n  }"
+media: all
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    pages: '*/canadabuys*'
+    negate: false
+  term:
+    id: term
+    negate: false
+    tid: null
+    context_mapping:
+      node: '@node.node_route_context:node'
+  panels_title:
+    id: panels_title
+    enabled: 0
+    negate: false
+    context_mapping: {  }
+conditions_require_all: true

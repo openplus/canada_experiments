@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: on_this_page
+label: 'On this page'
+image: ''
+description: 'Bullet list'
+html:
+  value: "<h2 class=\"h3\" style=\"margin-top: 15px !important;\">On this page\r\n</h2>\r\n<ul>\r\n  <li><a href=\"#\">Symptoms of flu</a></li>\r\n  <li><a href=\"#\">Flu vs a cold</a></li>\r\n  <li><a href=\"#\">If you become ill</a></li>\r\n  <li><a href=\"#\">How the flu is diagnosed</a></li>\r\n  <li><a href=\"#\">Treating the flu</a></li>\r\n  <li><a href=\"#\">Posters and videos to share</a></li>\r\n</ul>\r\n"
+  format: rich_text
+weight: -6

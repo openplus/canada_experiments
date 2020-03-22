@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - term_condition
+    - wxt_library
+id: dropdown_linking_script
+label: 'Dropdown linking script'
+code: "var sel = document.getElementById('search_options');\r\nsel.onchange = function () {\r\n    document.getElementById(\"type\").href = this.value + \".html\";\r\n}"
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    pages: '*unspsc*'
+    negate: false
+  term:
+    id: term
+    negate: false
+    tid: null
+    context_mapping:
+      node: '@node.node_route_context:node'
+  panels_title:
+    id: panels_title
+    enabled: 0
+    negate: false
+    context_mapping: {  }
+conditions_require_all: true

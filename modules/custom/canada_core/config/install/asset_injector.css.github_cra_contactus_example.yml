@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - term_condition
+    - wxt_library
+id: github_cra_contactus_example
+label: 'Remote GitHub CRA Contact Us Example'
+code: "@import url(https://gc-proto.github.io/cra-contactus/css/custom.css);\r\n"
+media: all
+preprocess: true
+conditions:
+  term:
+    id: term
+    negate: false
+    tid: '1'
+    context_mapping:
+      node: '@node.node_route_context:node'
+  panels_title:
+    id: panels_title
+    enabled: 0
+    negate: false
+    context_mapping: {  }
+conditions_require_all: true

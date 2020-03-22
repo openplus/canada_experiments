@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - term_condition
+    - wxt_library
+id: home_page_css
+label: 'Home page css'
+code: ".promo figcaption a.figcaption {\r\n  color: #fff;\r\n  text-decoration: underline;\r\n}\r\n\r\n.promo a.figcaption {\r\n  color: #fff;\r\n}\r\n\r\nfigcaption.h5 {\r\n  text-decoration: underline;\r\n  color: #284162;\r\n}\r\n\r\nfigure p a.figcaption {\r\n  color: #333;\r\n  font-size: 17px;\r\n  line-height: 1em;\r\n}\r\n\r\n.container-fluid {\r\n  padding-right: 0px;\r\n  padding-left: 0px;\r\n}"
+media: all
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+  term:
+    id: term
+    negate: false
+    tid: null
+    context_mapping:
+      node: '@node.node_route_context:node'
+  panels_title:
+    id: panels_title
+    enabled: 0
+    negate: false
+    context_mapping: {  }
+conditions_require_all: true

@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: 3_col_container
+label: '3 column doormats'
+image: ''
+description: Doormats
+html:
+  value: "<section class=\"container gc-srvinfo\">\r\n<h2 class=\"wb-inv\">Services and information</h2>\r\n\r\n<div class=\"wb-eqht row wb-init wb-eqht-inited\" id=\"wb-auto-1\">\r\n<div class=\"col-lg-4 col-md-6\" style=\"vertical-align: top; min-height: 153px;\">\r\n<h3><a href=\"./projects/projects.html\">Project list</a></h3>\r\n\r\n<p>List of all projects in progress and prototype links consectetur adipiscing elit, sed do eiusmod tempor</p>\r\n</div>\r\n\r\n<div class=\"col-lg-4 col-md-6\" style=\"vertical-align: top; min-height: 153px;\">\r\n<h3><a href=\"#\">Get started</a></h3>\r\n\r\n<p>How to join an active project, or start your own consectetur adipiscing elit, sed do eiusmod tempor</p>\r\n</div>\r\n\r\n<div class=\"col-lg-4 col-md-6\" style=\"vertical-align: top; min-height: 153px;\">\r\n<h3><a href=\"\">How it all works</a></h3>\r\n\r\n<p>How we collaborate to improve the Canada.ca design patterns consectetur adipiscing elit, sed do eiusmod tempor</p>\r\n</div>\r\n</div>\r\n</section>\r\n"
+  format: rich_text
+weight: -4
