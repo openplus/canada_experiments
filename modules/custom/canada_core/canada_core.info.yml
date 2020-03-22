@@ -1,0 +1,11 @@
+name: 'CANADA Core'
+description: 'Registers additional CANADA functionality.'
+type: module
+core: 8.x
+package: CANADA
+
+# Required modules
+dependencies: { }
+
+# Required libraries
+libraries: { }

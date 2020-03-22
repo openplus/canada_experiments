@@ -1,0 +1,65 @@
+<?php
+
+/**
+ * @file
+ * Install and uninstall functions for the CANADA installation profile.
+ */
+
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function canada_install() {
+  _canada_setup_branding();
+  _canada_setup_base_configurations();
+}
+
+/**
+ * Setup base site configurations.
+ */
+function _canada_setup_base_configurations() {
+  $config = \Drupal::service('config.factory')->getEditable('system.site');
+  $config->set('name', 'Canada.ca')
+    ->set('mail', 'robin@openplus.ca')
+    ->save();
+
+  $config = \Drupal::languageManager()->getLanguageConfigOverride('fr', 'system.site');
+  $config->set('name', "Canada.ca")
+    ->save();
+
+  // Set regional settings to be Country: Canada, TZ: America/Toronto, etc.
+  \Drupal::service('config.factory')
+    ->getEditable('system.date')
+    ->set('country.default', 'CA')
+    ->set('timezone.default', 'America/Toronto')
+    ->set('timezone.user.configurable', TRUE)
+    ->set('timezone.user.warn', FALSE)
+    ->set('timezone.user.default', 0)
+    ->save(TRUE);
+}
+
+/**
+ * Set up the default branding.
+ */
+function _canada_setup_branding() {
+  // Set the path to the logo, favicon and README file based on install
+  // directory.
+  $canada_path = drupal_get_path('profile', 'canada');
+  \Drupal::configFactory()
+    ->getEditable('system.theme.global')
+    ->set('logo', [
+      'path' => $canada_path . '/canada.svg',
+      'url' => '',
+      'use_default' => FALSE,
+    ])
+    ->set('favicon', [
+      'mimetype' => 'image/vnd.microsoft.icon',
+      'path' => $canada_path . '/favicon.ico',
+      'url' => '',
+      'use_default' => FALSE,
+    ])
+    ->save(TRUE);
+}

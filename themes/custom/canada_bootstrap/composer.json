@@ -1,0 +1,6 @@
+{
+    "name": "drupal/canada_bootstrap",
+    "description": "CANADA Bootstrap sub-theme for Drupal WxT.",
+    "type": "drupal-theme",
+    "license": "GPL-2.0+"
+}
