@@ -27,6 +27,8 @@ dependencies:
   - drupal:vardumper
   - drupal:views_bulk_edit
   - drupal:views_bulk_operations
+  - drupal:webform
+  - drupal:wxt_library
 
 # Required libraries
 libraries: { }
