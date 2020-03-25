@@ -29,7 +29,7 @@ before_install:
   - phpenv config-rm xdebug.ini
   # Lets set-up our helper repository with all the docker config and use correct version in composer.json.
   - git clone --branch 8.x https://github.com/openplus/site-canada-experiments.git
-  - cd site-canada
+  - cd site-canada-experiments
   # Install Drupal CANADA.
   - export PR=https://api.github.com/repos/$TRAVIS_REPO_SLUG/pulls/$TRAVIS_PULL_REQUEST
   - export BRANCH=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo $TRAVIS_BRANCH; else echo `curl -s $PR | jq -r .head.ref`; fi)
