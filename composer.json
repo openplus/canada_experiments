@@ -67,9 +67,7 @@
                 "type:npm-asset"
             ],
             "html/modules/custom/{$name}": [
-                "drupal/wxt_library",
-                "openplus/openplus_migrate",
-                "openplus/openplus_vbo"
+                "drupal/wxt_library"
             ],
             "html/modules/contrib/{$name}": [
                 "type:drupal-module"
