@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains canada.profile.
+ * Contains canada_experiments.profile.
  */
 
 use Symfony\Component\Yaml\Parser;
@@ -78,7 +78,7 @@ function canada_experiments_import_language_config(array &$install_state) {
   // The language code of the default locale.
   $site_default_langcode = $language_manager->getDefaultLanguage()->getId();
 
-  $files = file_scan_directory(drupal_get_path('profile', 'canada'), '/.*\.info\.yml/');
+  $files = file_scan_directory(drupal_get_path('profile', 'canada_experiments'), '/.*\.info\.yml/');
   foreach ($files as $file) {
     // The directory where the language config files reside.
     $language_config_directory = dirname($file->uri) . '/config/install/language';

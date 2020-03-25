@@ -47,7 +47,7 @@ function _canada_experiments_setup_base_configurations() {
 function _canada_experiments_setup_branding() {
   // Set the path to the logo, favicon and README file based on install
   // directory.
-  $canada_experiments_path = drupal_get_path('profile', 'canada');
+  $canada_experiments_path = drupal_get_path('profile', 'canada_experiments');
   \Drupal::configFactory()
     ->getEditable('system.theme.global')
     ->set('logo', [

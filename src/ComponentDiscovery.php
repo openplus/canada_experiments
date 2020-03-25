@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\canada;
+namespace Drupal\canada_experiments;
 
 use Drupal\Core\Extension\Extension;
 use Drupal\Core\Extension\ExtensionDiscovery;
@@ -54,10 +54,10 @@ class ComponentDiscovery {
     if (empty($this->profile)) {
       $profiles = $this->discovery->scan('profile');
 
-      if (empty($profiles['canada'])) {
-        throw new \RuntimeException('CANADA profile not found.');
+      if (empty($profiles['canada_experiments'])) {
+        throw new \RuntimeException('CANADA experiments profile not found.');
       }
-      $this->profile = $profiles['canada'];
+      $this->profile = $profiles['canada_experiments'];
     }
     return $this->profile;
   }

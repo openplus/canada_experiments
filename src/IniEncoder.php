@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\canada;
+namespace Drupal\canada_experiments;
 
 /**
  * Contains methods for parsing and dumping data in the legacy info file format.

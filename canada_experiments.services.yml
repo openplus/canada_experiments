@@ -1,10 +1,10 @@
 services:
-  canada.extender:
+  canada_experiments.extender:
     class: '\Drupal\canada_experiments\Extender'
     arguments:
       - '@app.root'
       - '@site.path'
-  canada.form_helper:
+  canada_experiments.form_helper:
     class: '\Drupal\canada_experiments\FormHelper'
     arguments:
       - '@element_info'

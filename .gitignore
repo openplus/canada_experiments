@@ -30,7 +30,7 @@ bower_components/
 *.sass-cache*
 **/sass/*.css
 
-# CANADA
+# CANADA Experiments
 test-results
 files_private/
 /.editorconfig

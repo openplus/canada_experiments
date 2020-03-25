@@ -34,8 +34,8 @@ totally disregards all of that and may therefore break your site.
 To update CANADA safely:
 
 1. Download the latest version of CANADA from
-   https://github.com/openplus/canada and extract it.
-2. Replace your ```profiles/od``` directory with the one included in the
+   https://github.com/openplus/canada_experiments and extract it.
+2. Replace your ```profiles/canada_experiments``` directory with the one included in the
    fresh copy of CANADA.
 3. Replace your ```core``` directory with the one included in the fresh copy
    CANADA.

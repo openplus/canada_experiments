@@ -1,4 +1,4 @@
-# CANADA
+# CANADA Experiments
 
 [![Build Status][travisci-badge]][travisci]
 
@@ -9,5 +9,5 @@ This project is still under active development.
 [acquia]:               https://acquia.com
 [lightning]:            https://github.com/acquia/lightning
 [wxt]:                  https://github.com/drupalwxt/wxt
-[travisci]:             https://travis-ci.org/openplus/canada
+[travisci]:             https://travis-ci.org/openplus/canada_experiments
 [travisci-badge]:       https://travis-ci.org/openplus/canada_experiments.png?branch=8.x-1.x

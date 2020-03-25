@@ -13,7 +13,7 @@ use Behat\Behat\Context\SnippetAcceptingContext;
  *
  * CANADASubContext is automatically loaded by the Drupal Behat Extension.
  *
- * @see canada.behat.inc.
+ * @see canada_experiments.behat.inc.
  * @see http://behat-drupal-extension.readthedocs.org/en/3.1/subcontexts.html#for-contributors
  */
 class FeatureContext extends RawDrupalContext implements SnippetAcceptingContext {

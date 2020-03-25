@@ -13,7 +13,7 @@ keep_english: true
 
 # Required modules
 dependencies:
-  # custom (canada)
+  # custom (canada_experiments)
   - drupal:canada_experiments_core
 
 themes:

@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\canada;
+namespace Drupal\canada_experiments;
 
 use Drupal\Core\Render\ElementInfoManagerInterface;
 

@@ -57,13 +57,13 @@ class ReleaseVersion {
     $encoder = new IniEncoder();
 
     $finder = (new Finder())
-      ->name('build-canada.make')
+      ->name('build-canada-experiments.make')
       ->in('.');
 
     /** @var \Symfony\Component\Finder\SplFileInfo $make_file */
     foreach ($finder as $make_file) {
       $make = $encoder->parse($make_file->getContents());
-      $make['projects']['canada']['download']['tag'] = $version;
+      $make['projects']['canada_experiments']['download']['tag'] = $version;
       file_put_contents($make_file->getPathname(), $encoder->encode($make));
     }
   }
