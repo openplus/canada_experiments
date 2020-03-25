@@ -1,0 +1,10 @@
+name: 'CANADA Experiments Extend'
+description: 'Wrapper module for enabling all of the CANADA Extensions.'
+type: module
+core: 8.x
+package: CANADA
+
+# Required modules
+dependencies:
+  - canada_experiments_core:canada_experiments_core
+  - canada_experiments_ext_migration:canada_experiments_ext_migration

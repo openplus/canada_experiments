@@ -37,7 +37,7 @@ class ComponentDiscoveryTest extends KernelTestBase {
   public function testGetAll() {
     $components = $this->discovery->getAll();
 
-    $this->assertInstanceOf(Extension::class, $components['canada_core']);
+    $this->assertInstanceOf(Extension::class, $components['canada_experiments_core']);
   }
 
   /**
@@ -46,7 +46,7 @@ class ComponentDiscoveryTest extends KernelTestBase {
   public function testGetMainComponents() {
     $components = $this->discovery->getMainComponents();
 
-    $this->assertInstanceOf(Extension::class, $components['canada_core']);
+    $this->assertInstanceOf(Extension::class, $components['canada_experiments_core']);
   }
 
   /**
@@ -55,7 +55,7 @@ class ComponentDiscoveryTest extends KernelTestBase {
   public function testGetSubComponents() {
     $components = $this->discovery->getSubComponents();
 
-    $this->assertArrayNotHasKey('canada_core', $components);
+    $this->assertArrayNotHasKey('canada_experiments_core', $components);
   }
 
 }

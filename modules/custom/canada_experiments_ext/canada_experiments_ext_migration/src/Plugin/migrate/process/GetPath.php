@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\canada_ext_migration\Plugin\migrate\process;
+namespace Drupal\canada_experiments_ext_migration\Plugin\migrate\process;
 
 use Drupal\migrate\MigrateExecutableInterface;
 use Drupal\migrate\MigrateSkipProcessException;
@@ -30,7 +30,7 @@ class GetPath extends ProcessPluginBase {
    * Custom function for drupal_get_path().
    */
   protected function getModulePath($value) {
-    return drupal_get_path('module', 'canada_ext_migration') . '/data/images/' . $value;
+    return drupal_get_path('module', 'canada_experiments_ext_migration') . '/data/images/' . $value;
   }
 
 }

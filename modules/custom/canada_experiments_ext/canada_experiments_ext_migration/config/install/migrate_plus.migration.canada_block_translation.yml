@@ -5,7 +5,7 @@ migration_tags:
 dependencies:
   enforced:
     module:
-      - canada_ext_migration
+      - canada_experiments_ext_migration
 label: 'Embedded data import for custom block types (basic)'
 source:
   plugin: embedded_data

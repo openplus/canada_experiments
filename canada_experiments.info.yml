@@ -14,7 +14,7 @@ keep_english: true
 # Required modules
 dependencies:
   # custom (canada)
-  - drupal:canada_core
+  - drupal:canada_experiments_core
 
 themes:
   - bartik

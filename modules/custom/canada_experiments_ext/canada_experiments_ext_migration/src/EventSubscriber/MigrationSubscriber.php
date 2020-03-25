@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\canada_ext_migration\EventSubscriber;
+namespace Drupal\canada_experiments_ext_migration\EventSubscriber;
 
 use Drupal\Core\Cache\CacheTagsInvalidatorInterface;
 use Drupal\Core\Config\ConfigFactoryInterface;

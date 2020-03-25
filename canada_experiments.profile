@@ -10,14 +10,14 @@ use Symfony\Component\Yaml\Parser;
 /**
  * Implements hook_install_tasks().
  */
-function canada_install_tasks() {
+function canada_experiments_install_tasks() {
   return [
-    'canada_install_extensions' => [
+    'canada_experiments_install_extensions' => [
       'display_name' => t('Install extensions'),
       'display' => TRUE,
       'type' => 'batch',
     ],
-    'canada_import_language_config' => [
+    'canada_experiments_import_language_config' => [
       'display_name' => t('Import language configuration'),
       'display' => TRUE,
     ],
@@ -27,12 +27,12 @@ function canada_install_tasks() {
 /**
  * Implements hook_install_tasks_alter().
  */
-function canada_install_tasks_alter(array &$tasks, array $install_state) {
+function canada_experiments_install_tasks_alter(array &$tasks, array $install_state) {
   // Moves the language config import task to the end of the install tasks so
   // that it is run after the final import of languages.
-  $task = $tasks['canada_import_language_config'];
-  unset($tasks['canada_import_language_config']);
-  $tasks = array_merge($tasks, ['canada_import_language_config' => $task]);
+  $task = $tasks['canada_experiments_import_language_config'];
+  unset($tasks['canada_experiments_import_language_config']);
+  $tasks = array_merge($tasks, ['canada_experiments_import_language_config' => $task]);
 }
 
 /**
@@ -44,13 +44,13 @@ function canada_install_tasks_alter(array &$tasks, array $install_state) {
  * @return array
  *   The batch job definition.
  */
-function canada_install_extensions(array &$install_state) {
+function canada_experiments_install_extensions(array &$install_state) {
   $batch = [];
   $modules = [
     'wxt_ext',
   ];
   foreach ($modules as $module) {
-    $batch['operations'][] = ['canada_install_module', (array) $module];
+    $batch['operations'][] = ['canada_experiments_install_module', (array) $module];
   }
   return $batch;
 }
@@ -61,7 +61,7 @@ function canada_install_extensions(array &$install_state) {
  * @param string|array $module
  *   The name(s) of the module(s) to install.
  */
-function canada_install_module($module) {
+function canada_experiments_install_module($module) {
   \Drupal::service('module_installer')->install((array) $module);
 }
 
@@ -71,7 +71,7 @@ function canada_install_module($module) {
  * @param array $install_state
  *   The current install state.
  */
-function canada_import_language_config(array &$install_state) {
+function canada_experiments_import_language_config(array &$install_state) {
   $language_manager = \Drupal::languageManager();
   $yaml_parser = new Parser();
 

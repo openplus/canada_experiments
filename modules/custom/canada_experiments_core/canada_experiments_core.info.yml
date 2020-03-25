@@ -1,4 +1,4 @@
-name: 'CANADA Core'
+name: 'CANADA Experiments Core'
 description: 'Registers additional Canada.ca functionality.'
 type: module
 core: 8.x

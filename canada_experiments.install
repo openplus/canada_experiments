@@ -12,15 +12,15 @@
  *
  * @see system_install()
  */
-function canada_install() {
-  _canada_setup_branding();
-  _canada_setup_base_configurations();
+function canada_experiments_install() {
+  _canada_experiments_setup_branding();
+  _canada_experiments_setup_base_configurations();
 }
 
 /**
  * Setup base site configurations.
  */
-function _canada_setup_base_configurations() {
+function _canada_experiments_setup_base_configurations() {
   $config = \Drupal::service('config.factory')->getEditable('system.site');
   $config->set('name', 'Canada.ca')
     ->set('mail', 'robin@openplus.ca')
@@ -44,20 +44,20 @@ function _canada_setup_base_configurations() {
 /**
  * Set up the default branding.
  */
-function _canada_setup_branding() {
+function _canada_experiments_setup_branding() {
   // Set the path to the logo, favicon and README file based on install
   // directory.
-  $canada_path = drupal_get_path('profile', 'canada');
+  $canada_experiments_path = drupal_get_path('profile', 'canada');
   \Drupal::configFactory()
     ->getEditable('system.theme.global')
     ->set('logo', [
-      'path' => $canada_path . '/canada.svg',
+      'path' => $canada_experiments_path . '/canada_experiments.svg',
       'url' => '',
       'use_default' => FALSE,
     ])
     ->set('favicon', [
       'mimetype' => 'image/vnd.microsoft.icon',
-      'path' => $canada_path . '/favicon.ico',
+      'path' => $canada_experiments_path . '/favicon.ico',
       'url' => '',
       'use_default' => FALSE,
     ])

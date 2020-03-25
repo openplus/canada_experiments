@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\canada_ext_migration\Plugin\migrate\destination;
+namespace Drupal\canada_experiments_ext_migration\Plugin\migrate\destination;
 
 use Drupal\migrate\Plugin\migrate\destination\DestinationBase;
 use Drupal\migrate\Plugin\MigrationInterface;

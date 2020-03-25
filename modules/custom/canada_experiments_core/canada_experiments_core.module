@@ -2,7 +2,7 @@
 
 /**
  * @file
- * Contains canada_core.module.
+ * Contains canada_experiments_core.module.
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
@@ -10,11 +10,11 @@ use Drupal\Core\Routing\RouteMatchInterface;
 /**
  * Implements hook_help().
  */
-function canada_core_help($route_name, RouteMatchInterface $route_match) {
+function canada_experiments_core_help($route_name, RouteMatchInterface $route_match) {
   switch ($route_name) {
-    case 'help.page.canada_core':
+    case 'help.page.canada_experiments_core':
       $output = '<h3>' . t('About') . '</h3>';
-      $output .= '<p>' . t('The CANADA Core module helps load the additional
+      $output .= '<p>' . t('The CANADA Experiments Core module helps load the additional
       assets required to properly implement <a href=":canada_ca">CANADA</a>.',
       [':canada_ca' => 'https://energy-information.canada.ca/']) . '</p>';
       return $output;
