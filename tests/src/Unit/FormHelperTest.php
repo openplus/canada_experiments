@@ -1,15 +1,15 @@
 <?php
 
-namespace Drupal\Tests\canada\Unit;
+namespace Drupal\Tests\canada_experiments\Unit;
 
 use Drupal\Core\Render\ElementInfoManagerInterface;
-use Drupal\canada\FormHelper;
+use Drupal\canada_experiments\FormHelper;
 use Drupal\Tests\UnitTestCase;
 
 /**
- * @group canada
+ * @group canada_experiments
  *
- * @coversDefaultClass \Drupal\canada\FormHelper
+ * @coversDefaultClass \Drupal\canada_experiments\FormHelper
  */
 class FormHelperTest extends UnitTestCase {
 

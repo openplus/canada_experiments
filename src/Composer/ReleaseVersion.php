@@ -1,8 +1,8 @@
 <?php
 
-namespace Drupal\canada\Composer;
+namespace Drupal\canada_experiments\Composer;
 
-use Drupal\canada\IniEncoder;
+use Drupal\canada_experiments\IniEncoder;
 use Composer\Script\Event;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Yaml\Yaml;

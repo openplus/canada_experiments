@@ -1,22 +1,22 @@
 <?php
 
-namespace Drupal\Tests\canada\Kernel;
+namespace Drupal\Tests\canada_experiments\Kernel;
 
 use Drupal\Core\Extension\Extension;
 use Drupal\KernelTests\KernelTestBase;
-use Drupal\canada\ComponentDiscovery;
+use Drupal\canada_experiments\ComponentDiscovery;
 
 /**
- * @group canada
+ * @group canada_experiments
  *
- * @coversDefaultClass \Drupal\canada\ComponentDiscovery
+ * @coversDefaultClass \Drupal\canada_experiments\ComponentDiscovery
  */
 class ComponentDiscoveryTest extends KernelTestBase {
 
   /**
    * The ComponentDiscovery under test.
    *
-   * @var \Drupal\canada\ComponentDiscovery
+   * @var \Drupal\canada_experiments\ComponentDiscovery
    */
   protected $discovery;
 

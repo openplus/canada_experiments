@@ -1,8 +1,8 @@
 <?php
 
-namespace Drupal\canada\Composer;
+namespace Drupal\canada_experiments\Composer;
 
-use Drupal\canada\IniEncoder;
+use Drupal\canada_experiments\IniEncoder;
 use Composer\Package\PackageInterface;
 use Composer\Script\Event;
 use Composer\Util\ProcessExecutor;

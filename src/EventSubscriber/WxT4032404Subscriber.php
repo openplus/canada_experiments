@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\canada\EventSubscriber;
+namespace Drupal\canada_experiments\EventSubscriber;
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpKernel\Event\GetResponseForExceptionEvent;

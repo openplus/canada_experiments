@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\Tests\canada\Functional;
+namespace Drupal\Tests\canada_experiments\Functional;
 
 use Drupal\Tests\BrowserTestBase;
 
