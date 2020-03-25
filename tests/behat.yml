@@ -26,7 +26,7 @@ default:
         paths:
           - './profiles/lightning'
           - './profiles/wxt'
-          - './profiles/canada'
+          - './profiles/canada_experiments'
     Bex\Behat\ScreenshotExtension:
       screenshot_taking_mode: failed_steps
       image_drivers:
