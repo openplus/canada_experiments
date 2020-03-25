@@ -24,7 +24,7 @@ url:
 theme:
   visibility: 1
   themes:
-    canada_bootstrap: canada_bootstrap
+    canada_experiments: canada_experiments
     wxt_bootstrap: wxt_bootstrap
 minimized:
   options: 1

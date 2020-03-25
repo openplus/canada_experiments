@@ -116,16 +116,3 @@ function canada_import_language_config(array &$install_state) {
     }
   }
 }
-
-/**
- * Implements hook_modules_installed().
- */
-function canada_modules_installed($modules) {
-  if (in_array('wxt', $modules)) {
-    \Drupal::configFactory()
-      ->getEditable('system.theme')
-      ->set('default', 'canada_bootstrap')
-      ->set('admin', 'claro')
-      ->save(TRUE);
-  }
-}

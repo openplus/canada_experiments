@@ -1,8 +1,8 @@
 # Schema for the theme setting configuration file of the CANADA Bootstrap theme.
 
-canada_bootstrap.settings:
+canada_experiments.settings:
   type: theme_settings
-  label: 'CANADA Bootstrap settings'
+  label: 'Canada Experiments settings'
   mapping:
     cdn_provider:
       type: string

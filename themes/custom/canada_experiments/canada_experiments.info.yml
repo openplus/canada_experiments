@@ -1,8 +1,8 @@
-name: 'CANADA Bootstrap'
+name: 'Canada Experiments'
 description: 'WxT sub-theme(s) support leveraging WxT Bootstrap. Source files for Bootstrap are defined as part of the WxT Library module.'
 type: theme
 core: 8.x
-package: 'CANADA'
+package: 'canada'
 base theme: wxt_bootstrap
 
 regions:
@@ -27,7 +27,7 @@ regions:
 
 libraries-extend:
   bootstrap/framework:
-    - 'canada_bootstrap/framework'
+    - 'canada_experiments/framework'
 
 # libraries:
 #     # Define your own libraries here, example react, or cdn library
