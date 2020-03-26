@@ -1,4 +1,4 @@
-# CANADA Experiments
+# Canada Experiments
 
 [![Build Status][travisci-badge]][travisci]
 

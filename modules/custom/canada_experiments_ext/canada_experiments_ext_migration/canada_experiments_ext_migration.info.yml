@@ -1,8 +1,8 @@
-name: 'CANADA Extend Migrate'
+name: 'Canada Experiments Extend Migrate'
 description: 'Registers migration plugins and provides content.'
 type: module
 core: 8.x
-package: CANADA
+package: canada
 
 # Required modules
 dependencies:

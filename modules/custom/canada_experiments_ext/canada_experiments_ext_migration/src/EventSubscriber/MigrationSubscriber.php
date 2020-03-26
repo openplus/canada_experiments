@@ -21,7 +21,7 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\Session\Session;
 
 /**
- * CANADA subscriber for controller requests.
+ * Canada Experiments subscriber for controller requests.
  */
 class MigrationSubscriber implements EventSubscriberInterface {
 

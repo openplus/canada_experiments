@@ -55,7 +55,7 @@ class ComponentDiscovery {
       $profiles = $this->discovery->scan('profile');
 
       if (empty($profiles['canada_experiments'])) {
-        throw new \RuntimeException('CANADA experiments profile not found.');
+        throw new \RuntimeException('Canada experiments profile not found.');
       }
       $this->profile = $profiles['canada_experiments'];
     }

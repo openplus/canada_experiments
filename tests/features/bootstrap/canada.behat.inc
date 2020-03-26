@@ -15,7 +15,7 @@ use Behat\Mink\Exception\UnsupportedDriverActionException;
 use Drupal\DrupalExtension\Context\DrupalSubContextBase;
 
 /**
- * Sub context for CANADA step definitions.
+ * Sub context for Canada step definitions.
  */
 class CANADASubContext extends DrupalSubContextBase {
 

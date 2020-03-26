@@ -24,7 +24,7 @@ class ReleaseVersion {
 
     static::updateMakeFile($version);
 
-    // Find all .info files in CANADA..except in the installed code base.
+    // Find all .info files in canada_experiments...except in the installed code base.
     $finder = (new Finder())
       ->name('*.info.yml')
       ->in('.')

@@ -1,4 +1,4 @@
-CANADA Experiments Core
+Canada Experiments Core
 =======================
 
-This module adds custom CANADA Experiments functionality.
+This module adds custom Canada Experiments functionality.

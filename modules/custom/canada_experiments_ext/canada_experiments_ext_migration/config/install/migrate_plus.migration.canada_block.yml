@@ -19,7 +19,7 @@ source:
         <section class="alert alert-info">
           <h2 class="h4">Coming soon: Canada's trusted new source for energy news!</h2>
           <p>Want to learn more about Canada's energy future?</p>
-          <p>Statistics Canada and Natural Resources Canada will be developing the Canadian Centre for Energy Information (CANADA) in collaboration with Environment and Climate Change Canada and the Canada Energy Regulator. This new website will house resources on all things energy-related, including production, consumption, international trade and much more.</p>
+          <p>Statistics Canada and Natural Resources Canada will be developing the Canadian Centre for Energy Information (Canada) in collaboration with Environment and Climate Change Canada and the Canada Energy Regulator. This new website will house resources on all things energy-related, including production, consumption, international trade and much more.</p>
           <p>Check back frequently to see what's new, and follow #energynews on social media to keep up with the latest developments!</p>
         </section>
   # Under 'ids', we identify source fields populated above which will uniquely

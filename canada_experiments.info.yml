@@ -1,5 +1,5 @@
 name: 'canada_experiments'
-description: 'A Drupal distribution for CANADA created to leverage the Web Experience Toolkit.'
+description: 'A Drupal distribution for Canada Experiments created to leverage the Web Experience Toolkit.'
 type: profile
 core: 8.x
 distribution:

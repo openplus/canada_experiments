@@ -1,6 +1,6 @@
-# CANADA Theme
+# Canada Experiments Theme
 
-A CANADA theme that helps you implement and extend [wxt_bootstrap][wxt_bootstrap] leveraging a sub-theme.
+A Canada Experiments theme that helps you implement and extend [wxt_bootstrap][wxt_bootstrap] leveraging a sub-theme.
 
 ## Important
 

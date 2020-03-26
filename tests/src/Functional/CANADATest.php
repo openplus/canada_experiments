@@ -5,7 +5,7 @@ namespace Drupal\Tests\canada_experiments\Functional;
 use Drupal\Tests\BrowserTestBase;
 
 /**
- * Tests CANADA installation profile expectations.
+ * Tests Canada installation profile expectations.
  *
  * @group canada
  */
