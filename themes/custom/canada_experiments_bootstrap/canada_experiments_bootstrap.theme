@@ -10,10 +10,10 @@
 /**
  * Implements hook_theme_suggestions_HOOK_alter for blocks.
  */
-function canada_experiments_theme_suggestions_block_alter(&$suggestions, $variables) {
+function canada_experiments_bootstrap_theme_suggestions_block_alter(&$suggestions, $variables) {
 
   // Load theme suggestions for blocks from parent theme.
   foreach ($suggestions as &$suggestion) {
-    $suggestion = str_replace('canada_experiments_', 'wxt_bootstrap_', $suggestion);
+    $suggestion = str_replace('canada_experiments_bootstrap_', 'wxt_bootstrap_', $suggestion);
   }
 }

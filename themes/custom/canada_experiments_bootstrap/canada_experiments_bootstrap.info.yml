@@ -1,4 +1,4 @@
-name: 'Canada Experiments'
+name: 'Canada Experiments Bootstrap'
 description: 'WxT sub-theme(s) support leveraging WxT Bootstrap. Source files for Bootstrap are defined as part of the WxT Library module.'
 type: theme
 core: 8.x
@@ -27,12 +27,12 @@ regions:
 
 libraries-extend:
   bootstrap/framework:
-    - 'canada_experiments/framework'
+    - 'canada_experiments_bootstrap/framework'
 
 # libraries:
 #     # Define your own libraries here, example react, or cdn library
-#   - canada_experiments/diff-jquery
-#   - canada_experiments/contextual-css-override
+#   - canada_experiments_bootstrap/diff-jquery
+#   - canada_experiments_bootstrap/contextual-css-override
 
 # libraries-extend:
 #   bootstrap/framework:
@@ -66,10 +66,10 @@ libraries-extend:
 # contextual/drupal.contextual-links: false
 
 # Replace only a certain file for a library
-# contextual/drupal.contextual-links: canada_experiments/contextual-css-override
+# contextual/drupal.contextual-links: canada_experiments_bootstrap/contextual-css-override
 
-# Replace an entire library. The new library is defined in canada_experiments.libraries.yml
+# Replace an entire library. The new library is defined in canada_experiments_bootstrap.libraries.yml
 # core/drupal.collapse: mytheme/collapse
 
-# Replace an asset with another. -> check canada_experiments.libraries.yml
-# core/jquery: canada_experiments/diff-jquery
+# Replace an asset with another. -> check canada_experiments_bootstrap.libraries.yml
+# core/jquery: canada_experiments_bootstrap/diff-jquery
