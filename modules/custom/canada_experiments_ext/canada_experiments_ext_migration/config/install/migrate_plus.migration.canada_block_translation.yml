@@ -1,5 +1,5 @@
 id: canada_block_translation
-migration_group: canada_translation
+migration_group: canada_experiments_translation
 migration_tags:
   - Core
 dependencies:

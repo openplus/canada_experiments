@@ -1,5 +1,5 @@
 id: canada_node_landing_page
-migration_group: canada
+migration_group: canada_experiments
 migration_tags:
   - Core
 label: 'Embedded data feed of node landing page content'

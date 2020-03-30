@@ -1,6 +1,6 @@
 id: canada_file
 label: Embedded data feed of file associated metadata
-migration_group: canada
+migration_group: canada_experiments
 migration_tags:
   - Core
 source:
